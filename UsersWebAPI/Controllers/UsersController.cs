@@ -82,6 +82,7 @@ namespace UsersWebAPI.Controllers
         }
 
         // POST: api/Users
+        [HttpPost, Route("", Name = "CreateRoute")]
         [ResponseType(typeof(User))]
         public async Task<IHttpActionResult> PostUser(User user)
         {

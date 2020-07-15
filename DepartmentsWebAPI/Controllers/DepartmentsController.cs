@@ -82,6 +82,7 @@ namespace DepartmentsWebAPI.Controllers
         }
 
         // POST: api/Departments
+        [HttpPost, Route("", Name = "CreateRoute")]
         [ResponseType(typeof(Department))]
         public async Task<IHttpActionResult> PostDepartment(Department department)
         {
